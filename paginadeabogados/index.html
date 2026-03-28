@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <a href="index.html">
+        <title>lawyers | sentencers</title>
+        <link rel="icon" type="image/jpg" href="logoab.jpg">
+    </a>
+    <meta name="description" content="The lawyers sentencers - Especialistas en derecho civil, penal y laboral. Contacto y consulta inicial.">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="script.js" defer></script>
+
+
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="brand">
+
+
+                    <img src="img/logoab.jpg" alt="Logo" style="height:70px;vertical-align:middle;margin-right:30px;">
+
+
+
+                <h1><i><a href="index.html"></a>The lawyers <span>sentencers</span></i></h1>
+                <p class="tag">Defensa confiable — Resultados reales</p>
+            </div>
+            <nav class="nav">
+                <a href="index.html" class="nav-link">Inicio</a>
+                <a href="servicios.html" class="nav-link">Servicios</a>
+                <a href="equipo.html" class="nav-link">Equipo</a>
+                <a href="nuestros socios.html" class="nav-link">Nuestros Socios</a>
+                <a class="btn" href="contactos.html" class="nav-link">Contacto</a>
+            </nav>
+            <button class="nav-toggle" aria-label="Abrir menú">☰</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container hero-grid">
+                <div class="hero-text">
+                    <h2>Tu defensa. Nuestra prioridad.</h2>
+                    <p><i><b>Asesoría legal experta en derecho civil, penal y laboral. Consulta inicial gratuita.</b></p></i>
+                        <div class="hero-cta">
+                            <a class="btn large boton-animado" href="contactos.html">Solicitar consulta</a>
+                            <a class="nav-link" href="servicios.html" class="nav-link"> Ver servicios</a>
+                        </div>
+                        <br>
+                        <a class="btn large boton-animado" href="#abajo">
+                            <b><i>Click Aqui Para Mas Informacion</i></b>
+                        </a>
+
+                </div>
+                <div class="hero-image">
+                    <img alt="Abogados" src="img/abogadosimg.jpg" style="width:100%;max-width:700px;border-radius:12px;box-shadow:0 6px 18px rgba(17,24,39,.06);">
+                </div>
+            </div>
+        </section>
+
+
+        <p style="height: 300px;"></p>
+        <!-- Solo para simular espacio -->
+
+        <div class="swiper bannerSwiper">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <img src="img/baner.png" style="height:350px;vertical-align:middle;margin-right:50px;">
+
+                </div>
+
+
+
+                <div class="swiper-slide">
+                    <img src="img/baner2.png" style="height:350px;vertical-align:middle;margin-right:50px;">
+
+                </div>
+
+
+                <div class="swiper-slide">
+                    <img src="img/baner3.png" style="height:350px;vertical-align:middle;margin-right:50px;">
+
+
+                </div>
+
+            </div>
+
+            <!-- Flechas -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+
+            <!-- Puntos -->
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <script>
+            new Swiper('.bannerSwiper', {
+                loop: true,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
+        </script>
+
+        <p style="height: 500px;"></p>
+        <!-- Solo para simular espacio -->
+        <div class="card-container">
+            <div class="card">
+
+
+                <div id="abajo">
+                    <h2>Mas Informacion Sobre The Lawyers Sentencers:</h2>
+                    <i><p>The Lawyers Sentencers es un bufete de abogados especializado en brindar soluciones legales confiables, estratégicas y efectivas. Nuestro equipo está compuesto por profesionales altamente capacitados en diversas ramas del derecho, comprometidos
+                con defender los intereses de cada cliente con integridad, transparencia y resultados reales.
+
+                <br><br>Ofrecemos asesoría y representación legal en derecho penal, civil, laboral, corporativo y familiar, entre otras áreas jurídicas, garantizando un acompañamiento cercano y personalizado en cada proceso. Nuestro enfoque se basa en
+                comprender a fondo cada caso, construir estrategias sólidas y actuar con determinación para obtener los mejores resultados posibles.
+                </br> <br><br>En The Lawyers Sentencers, creemos en la justicia, la ética y el compromiso. Por eso, cada cliente recibe atención profesional, humana y resolutiva, respaldada por un equipo de abogados expertos que trabajan unidos para proteger
+                sus derechos.
+            </p></i>
+                </div>
+
+
+
+                <footer class="site-footer">
+                    <div class="container">
+                        <p>© <span id="year"></span> The lawyers sentencers. Todos los derechos reservados.</p>
+                    </div>
+                </footer>
+
+                <script>
+                    document.getElementById('year').textContent = new Date().getFullYear();
+                    // nav toggle simple
+                    const btn = document.querySelector('.nav-toggle');
+                    const nav = document.querySelector('.nav');
+                    btn.addEventListener('click', () => nav.classList.toggle('open'));
+                </script>
+
+
+
+
+</body>
+
+</html>

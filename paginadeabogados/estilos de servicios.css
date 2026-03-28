@@ -1,0 +1,508 @@
+body .menu-navegacion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+nav ul {
+    margin-left: 50px;
+    /* Mueve todo el menú a la derecha */
+}
+
+nav {
+    text-align: right;
+}
+
+
+/* styles.css - diseño simple y profesional */
+
+ :root {
+    --bg: hsl(229, 17%, 69%);
+    --card: #3a4166;
+    --accent: #364966;
+    --text: #030303;
+    --muted: #6b7280;
+    --radius: 12px;
+    --container: 1100px;
+    font-family: 'Inter', system-ui, Arial, sans-serif;
+}
+
+* {
+    box-sizing: border-box
+}
+
+body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.5;
+    font-size: 19px
+}
+
+.container {
+    max-width: var(--container);
+    margin: 0 auto;
+    padding: 1rem
+}
+
+.site-header {
+    background: #fff;
+    box-shadow: 0 1px 8px rgba(16, 24, 40, .04);
+    position: sticky;
+    top: 0;
+    z-index: 50
+}
+
+.header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem
+}
+
+.brand h1 {
+    margin: 0;
+    font-size: 1.2rem
+}
+
+.brand span {
+    color: var(--accent)
+}
+
+.tag {
+    margin: 0;
+    font-size: .85rem;
+    color: var(--muted)
+}
+
+.nav {
+    display: flex;
+    gap: 1rem;
+    align-items: center
+}
+
+.nav a {
+    color: var(--text);
+    text-decoration: none
+}
+
+.nav .btn {
+    background: var(--accent);
+    color: #fff;
+    padding: .45rem .8rem;
+    border-radius: 8px;
+    text-decoration: none
+}
+
+.nav-toggle {
+    display: none;
+    border: 0;
+    background: transparent;
+    font-size: 1.2rem
+}
+
+
+/* color del la letra de la caja de contacto */
+
+input::placeholder,
+textarea::placeholder {
+    color: #050000;
+}
+
+
+/* Color de los placeholders */
+
+input::placeholder,
+textarea::placeholder {
+    color: #000000;
+    /* ← Cambia este color al que quieras */
+    opacity: 1;
+    /* Para que no se vea transparente */
+}
+
+
+/* hero */
+
+.hero {
+    padding: 3rem 0
+}
+
+.hero-grid {
+    display: grid;
+    grid-template-columns: 1fr 420px;
+    gap: 2rem;
+    align-items: center
+}
+
+.hero-text h2 {
+    font-size: 2rem;
+    margin: .2rem 0
+}
+
+.hero-text p {
+    color: var(--muted);
+    margin-bottom: 1rem
+}
+
+.btn {
+    background: var(--accent);
+    color: #fff;
+    padding: .6rem .9rem;
+    border-radius: 10px;
+    text-decoration: none;
+    display: inline-block
+}
+
+.btn.large {
+    padding: 0.9rem 1.2rem;
+    font-size: 1rem
+}
+
+.link {
+    margin-left: 1rem;
+    color: var(--accent);
+    text-decoration: none
+}
+
+
+/* sections */
+
+.section {
+    padding: 2.5rem 0
+}
+
+.section.light {
+    background: #fff;
+    border-radius: 16px;
+    margin: 1rem 0;
+    padding: 2.5rem
+}
+
+.section-title {
+    margin: 0 0 1rem;
+    font-size: 1.3rem
+}
+
+
+/* cards */
+
+.cards {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap
+}
+
+.card {
+    background: var(--card);
+    padding: 1.2rem;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(255, 199, 17, 0.06);
+    flex: 1;
+    min-width: 220px
+}
+
+
+/* team */
+
+.team-grid {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap
+}
+
+.team-member {
+    background: var(--card);
+    padding: 1rem;
+    border-radius: 12px;
+    text-align: center;
+    width: 220px
+}
+
+.team-member img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px
+}
+
+
+/* testimonials */
+
+.testimonials {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap
+}
+
+.testimonials blockquote {
+    background: var(--card);
+    padding: 1rem;
+    border-radius: 10px;
+    flex: 1;
+    min-width: 220px
+}
+
+
+/* contact */
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 360px;
+    gap: 1.2rem;
+    align-items: start
+}
+
+.contact-form {
+    background: var(--card);
+    padding: 1rem;
+    border-radius: 12px
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: .8rem;
+    color: var(--muted)
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: .6rem;
+    border-radius: 8px;
+    border: 1px solid #e6e9ee;
+    margin-top: .3rem
+}
+
+.form-actions {
+    display: flex;
+    gap: .6rem;
+    align-items: center;
+    margin-top: .6rem
+}
+
+.contact-info {
+    background: transparent;
+    padding: 1rem
+}
+
+
+/* footer */
+
+.site-footer {
+    padding: 1rem 0;
+    text-align: center;
+    color: var(--muted)
+}
+
+
+/* responsive */
+
+@media (max-width:900px) {
+    .hero-grid {
+        grid-template-columns: 1fr;
+        text-align: center
+    }
+    .hero-image {
+        order: -1
+    }
+    .contact-grid {
+        grid-template-columns: 1fr
+    }
+    .nav {
+        display: none
+    }
+    .nav.open {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 64px;
+        right: 16px;
+        background: #fff;
+        padding: 1rem;
+        border-radius: 8px;
+        box-shadow: 0 8px 40px rgba(2, 6, 23, .08)
+    }
+    .nav-toggle {
+        display: block
+    }
+    .contact-form label {
+        display: block;
+        margin-bottom: .8rem;
+        color: var(--muted);
+    }
+}
+
+
+/* CONFIGURACIÓN GENERAL */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: hsl(229, 17%, 69%);
+}
+
+
+/* CONTENEDOR DE CADA SECCIÓN */
+
+.seccion {
+    background-color: hsl(229, 17%, 69%);
+    /* azul grisáceo claro */
+    padding: 60px 20px;
+    text-align: center;
+}
+
+
+/* TÍTULOS */
+
+.titulo {
+    font-size: 26px;
+    margin-bottom: 40px;
+    color: #2b2b2b;
+    box-shadow: 0 6px 18px rgb(68, 0, 255);
+    font-weight: bold;
+}
+
+
+/* GRID DE TARJETAS */
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 columnas */
+    gap: 25px;
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+
+/* TARJETAS */
+
+.card {
+    background-color: white;
+    box-shadow: 0 6px 18px rgb(255, 255, 255);
+    border-radius: 4px;
+    padding: 8px;
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.15);
+}
+
+
+/* IMÁGENES */
+
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 3px;
+    color: #e6e9ee;
+    box-shadow: 0 6px 18px rgb(68, 0, 255);
+}
+
+
+/* TEXTO DE TARJETA */
+
+.card p {
+    margin: 10px 0 5px;
+    font-size: 14px;
+    color: #333;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contenedor {
+    background-color: #a8c7d8;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.columna {
+    width: 35%;
+}
+
+h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+    color: #003049;
+    cursor: pointer;
+}
+
+ul li:hover {
+    text-decoration: underline;
+}
+
+video::-webkit-media-controls {
+    display: none !important;
+}
+
+video::-moz-media-controls {
+    display: none !important;
+}
+
+video {
+    pointer-events: none;
+}
+
+.seccion {
+    background-color: hsl(229, 17%, 69%);
+    /* azul grisáceo claro */
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.card img {
+    transition: transform 0.4s ease;
+    /* Suavidad */
+}
+
+.card:hover img {
+    transform: scale(1.1);
+    /* Aumenta un 10% */
+}
+
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: scale(1.06);
+    /* Aumenta toda la tarjeta */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    /* Sombra elegante */
+}
+
+.nav-link {
+    padding: 8px 14px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    background-color: #2c3e50;
+    /* azul oscuro del botón Contacto */
+    color: #ffffffcc !important;
+    /* texto blanco */
+    transform: scale(1.1);
+    /* se amplía */
+}
+
+.nav-link:hover {
+    background-color: #2c3e50;
+    color: #ffffff !important;
+    transform: scale(1.12);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
