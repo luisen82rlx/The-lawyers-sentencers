@@ -5,33 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>lawyers | sentencers</title>
-    <link rel="stylesheet" href="estilos de socios.css">
+    <link rel="stylesheet" href="estilos-de-socios.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-
 </head>
 
 <body>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="script.js" defer></script>
 
-
-
-
-
-
-
     <header class="site-header">
-        <div class="container header-inner">
+    <div class="container header-inner">
 
-            <!-- logo y el tieto de titulo ese -->
-            <div class="brand">
-                <a href="index.html">
-                    <img src="img/logoab.jpg" alt="Logo" style="height:70px;vertical-align:middle;margin-right:30px;">
-                </a>
-                <h1><i>The lawyers <span>sentencers</span></i></h1>
-                <p class="tag">Defensa confiable — Resultados reales</p>
-            </div>
+        <div class="brand">
+            <a href="index.html">
+                <img src="img/logoab.jpg" alt="Logo" style="height:70px;vertical-align:middle;margin-right:30px;">
+            </a>
+            <h1><i>The lawyers <span>sentencers</span></i></h1>
+            <p class="tag">Defensa confiable — Resultados reales</p>
+        </div>
 
             <!-- trapo de menu -->
             <nav class="nav">
@@ -39,36 +31,24 @@
                 <a href="servicios.html" class="nav-link">Servicios</a>
                 <a href="equipo.html" class="nav-link">Equipo</a>
                 <a href="nuestros-socios.html" class="nav-link">Nuestros Socios</a>
-                <a class="btn" href="contactos.html" class="nav-link">Contacto</a>
+                <a class="btn nav-link" href="contactos.html">Contacto</a>
             </nav>
 
         </div>
     </header>
 
-
-
-</body>
-
-</html>
-</div>
-</header>
-
 <section id="equipo" class="section light">
     <div class="container">
 
+        <h2>Nuestro Equipo de Abogados</h2>
+        
 
-        </html>
+            <!-- TODAS TUS CARDS SE QUEDAN IGUAL -->
+            <!-- (no te las toqué porque están bien) -->
+
+        </div>
     </div>
-    </header>
-    </nav>
-
-
-    </head>
-
-    <body>
-        <header>Nuestro Equipo de Abogados</header>
-        <div class="container">
-
+</section>
 
             <div class="card">
                 <img src="img/abogado1.jpeg" alt="Lic. Claribel Martinez">
@@ -83,7 +63,7 @@
                     por su habilidad para construir argumentos sólidos, así como por su capacidad para identificar vacíos procesales que fortalezcan la defensa.
                     </b></p>
                     <p><b>Además de su práctica profesional, la Lic. Pérez participa activamente en conferencias y seminarios nacionales sobre reforma penal, garantizando que sus conocimientos se mantengan actualizados frente a las transformaciones legales
-                     del país.
+                        del país.
                     </b></p>
                 </div>
             </div>
@@ -131,8 +111,7 @@
                     <p>Posee un destacado dominio en manejo de conflictos laborales, 
                         negociación colectiva, diseño de políticas internas, auditorías laborales y representación ante tribunales de trabajo
                     </p>
-                    <p>Posee un destacado dominio en manejo de conflictos laborales, negociación colectiva, diseño de políticas
-                         internas, auditorías laborales y representación ante tribunales de trabajo
+                    <p>Posee un destacado dominio en manejo de conflictos laborales, negociación colectiva, diseño de políticas internas, auditorías laborales y representación ante tribunales de trabajo
                     </p></b>
 
                 </div>
@@ -202,8 +181,7 @@
                         valor.
                     </p>
                     <p>Ha representado a compañías nacionales e internacionales en procesos de negociación, cobranzas complejas y litigios comerciales. Su enfoque estratégico permite minimizar riesgos y garantizar operaciones seguras.</p>
-                    <p>Es reconocido por su habilidad para redactar contratos sólidos y anticipar posibles vulnerabilidades comerciales.</p>
-               </b>
+                    <p>Es reconocido por su habilidad para redactar contratos sólidos y anticipar posibles vulnerabilidades comerciales.</p></b>
                 </div>
             </div>
 
@@ -445,18 +423,19 @@
         </div>
         <footer class="site-footer">
             <div class="container">
-                <p>© <span id="year"></span> The lawyers sentencers. Todos los derechos reservados.</p>
-            </div>
-        </footer>
-        <script>
-            document.getElementById('year').textContent = new Date().getFullYear();
-            // nav toggle simple
-            const btn = document.querySelector('.nav-toggle');
-            const nav = document.querySelector('.nav');
-            btn.addEventListener('click', () => nav.classList.toggle('open'));
-        </script>
+            <p>© <span id="year"></span> The lawyers sentencers. Todos los derechos reservados.</p>
+    </div>
+</footer>
 
+<script>
+    document.getElementById('year').textContent = new Date().getFullYear();
 
-    </body>
+    const btn = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.nav');
+    if(btn){
+        btn.addEventListener('click', () => nav.classList.toggle('open'));
+    }
+</script>
 
-    </html>
+</body>
+</html>
